@@ -1,6 +1,17 @@
 <?php
 session_start();
+include "idarray.php";
 
-$_SESSION['pseudo'] = $_POST['pseudo'];
+$pseudo = $_POST['pseudo'];
+$mdp = $_POST['mdp'];
+foreach($users as $key => $value){
+    if($pseudo === $value['name'] && $mdp === $value['password']){
+        $_SESSION['pseudo'] = $_POST['pseudo'];
+        $_SESSION['mdp'] = $_POST['mdp'];   
+        header('Location: /');
+    }
+};
 
-header('Location: /');
+if(empty($_SESSION['pseudo']) && empty($_SESSION['mdp'])){
+    header('Location: /connexion.php');
+}

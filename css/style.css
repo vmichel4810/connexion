@@ -57,6 +57,25 @@ form{
     border: blue solid 2px;
     border-radius:30px;
 }
+.dropDown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-child{
+    display: none;
+}
+.dropdown-child a{
+    display:block;
+}
+.dropDown:hover .dropdown-child{
+    display:block;
+}
+.button-der{
+    border:blueviolet solid 2px;
+    border-radius: 5px;
+    padding:5px;
+    text-decoration: none;
+}
 /* .nav{
     border: blue solid 2px;
     border-radius:30px;

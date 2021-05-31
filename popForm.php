@@ -1,7 +1,6 @@
 <?php 
 session_start();
 $_SESSION['firstname'] = $_POST['name'];
-var_dump($_SESSION);
 
 ?>
 <!DOCTYPE html>
@@ -13,9 +12,10 @@ var_dump($_SESSION);
 </head>
 <body>
     <?php
-    include "templates/header.php";  
-   ?>
-    <p>Tu as bien envoyer ton formulaire <?= $_POST['name'].' '. $_POST['lname']?>tu es né le <?= $_POST['date']?></p>
+    include "templates/header.php";      
     
+    ?>
+    <p>Tu as bien envoyer ton formulaire <?= $_POST['name'].' '. $_POST['lname']?>tu es né le <?= $_POST['date']?></p>
+
 </body>
 </html>

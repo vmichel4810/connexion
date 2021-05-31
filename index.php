@@ -8,6 +8,7 @@
 <body>
     <?php
         include "templates/header.php"; 
+        
     ?>
 <main>
     <h1>WELCOME</h1>

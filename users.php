@@ -24,7 +24,6 @@ $users = [
         'age'=> 13
     ],
 ];
-var_dump($users);
 ?>
 
 <!DOCTYPE html>
