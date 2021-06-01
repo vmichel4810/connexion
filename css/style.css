@@ -1,18 +1,37 @@
-body{
-    height: 100vh;
+* {
     background-color:lightcyan;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin: 0;
     padding: 0;
-
+    font-family: 'Shadows Into Light', cursive;
 }
+body{
+    height: 100vh;
+}
+header {
+    height: 200px;
+    width: 100%;
+}
+nav li {
+    display: flex;
+}
+
+nav a {
+    width: 100px;
+    text-align: center;
+}
+.button-der{
+    width: 100px;
+    text-align: center;
+}
+
 main{
     display:flex;
     justify-content: center;
-    align-items: center;
-    height:100%;
+    align-items: center;    
     text-align: center;
+    min-height: 600px;
 }
 table{
     border:solid black 1px;
@@ -30,13 +49,37 @@ th{
 h1{
     color:chartreuse;
 }
-ul{
-    display: flex;
-    justify-content: space-around;
+
+input{
+    margin-bottom:10px;
 }
-li{
+form{       
+    justify-content: center;
+    padding: 1%;
+    height: 22%;
+    background-color: aqua;
+    border: blue solid 2px;
+    border-radius:30px;
+}
+
+.form{
+    min-height: 205px; 
+}
+
+/* SCROLLING MENU */
+nav{
+    width: 100%;
+}
+nav>ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width:100%; */
+}
+
+.w{
     list-style-type: none;
-   
 }
 a{
     border:blueviolet solid 2px;
@@ -45,30 +88,29 @@ a{
     text-decoration: none;
 }
 
-input{
-    margin-bottom:10px;
-}
-form{
-    width: 20%;
-    justify-content: center;
-    padding: 1%;
-    height: 22%;
-    background-color: aqua;
-    border: blue solid 2px;
-    border-radius:30px;
+.connec{
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
 }
 .dropDown{
     position:relative;
     display:inline-block;
+    width: 200px;   
 }
 .dropdown-child{
     display: none;
+    position: absolute;
 }
 .dropdown-child a{
     display:block;
 }
 .dropDown:hover .dropdown-child{
     display:block;
+    
+}
+.dropdown-child .button-der{
+    width:200px;
 }
 .button-der{
     border:blueviolet solid 2px;
@@ -80,3 +122,17 @@ form{
     border: blue solid 2px;
     border-radius:30px;
 } */
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+

@@ -28,15 +28,19 @@ $users = [
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <title>PHP</title>
-    </head>
-    <body>
-        <?php
-            include "templates/header.php"; 
-        ?>
+</head>
+<body>
+    <?php
+        include "templates/header.php"; 
+    ?>
+<main>
+
     <table>
         <tr>
             <th>Prénom</th>
@@ -52,6 +56,9 @@ $users = [
             <?php endforeach ?>
             <?php $users[0]['other'][2];?>
         </table>
-        
-    </body>
-    </html>
+</main>
+    <footer>
+        <p>MICHEL Vincent</p>
+    </footer>        
+</body>
+</html>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -10,7 +12,7 @@
     include "templates/header.php"; 
    ?>
     <main>
-        <form action="./popForm.php" method="post">
+        <form action="./popForm.php" method="post" class="form">
             <div class="nav">
                 <label for="firstName">Prénom :</label>
                 <input type="text" name="name" id="firsName">
@@ -35,7 +37,9 @@
                 <input type="submit" value="Envoyer le formulaire">
             </div>
         </form>
-        </main>
-    
+    </main>
+    <footer>
+        <p>MICHEL Vincent</p>
+    </footer>        
 </body>
 </html>

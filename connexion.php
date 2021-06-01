@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>connection</title>
 </head>
 <body>
@@ -10,7 +12,7 @@
         include "templates/header.php"; 
     ?>
 <main>
-    <form action="controller/session.php" method="post">
+    <form action="controller/session.php" method="post" class="connec">
         <div>
             <label for="login">Identifiant : </label>
             <input type="text" name="pseudo" id="" required>
