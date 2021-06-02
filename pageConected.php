@@ -11,6 +11,7 @@
     <?php include "templates/header.php";?>
     <main>
         <h1>WELCOME</h1>
+            <p>Vous avez accéder à la page secrete chut !!!</p>
     </main>
     <footer>
         <p>MICHEL Vincent</p>

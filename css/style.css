@@ -1,30 +1,53 @@
 * {
-    background-color:lightcyan;
-    /* display: flex;
-    flex-direction: column; */
+    /* background-color:lightcyan; */
     margin: 0;
     padding: 0;
     font-family: 'Shadows Into Light', cursive;
 }
 body{
     height: 100vh;
+    /* background-image:url(/img/Jun031.svg); */
+    /* background: no-repeat; */
+    background-size: cover;
+    opacity: 0.65;
 }
 header {
-    height: 200px;
+    height: 100px;
     width: 100%;
+    
+}
+nav{
+    width: 100%;
+}
+nav ul {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width:100%; */
 }
 nav li {
     display: flex;
+    background-color: aqua;
+}
+.w{
+    list-style-type: none;
+    border:blueviolet solid 2px;
+    border-radius: 5px;
+    padding:5px;
+    text-decoration: none;
 }
 
-nav a {
-    width: 100px;
+nav a{
+    width: 120px;
     text-align: center;
 }
-.button-der{
-    width: 100px;
-    text-align: center;
+
+a{
+    text-decoration: none;
+    color:black;
 }
+
 
 main{
     display:flex;
@@ -47,56 +70,54 @@ th{
     background-color: cornflowerblue;
 }
 h1{
-    color:chartreuse;
+    color:white;
+    background-color: black;
 }
 
-input{
-    margin-bottom:10px;
-}
 form{       
     justify-content: center;
-    padding: 1%;
+    padding: 2%;
     height: 22%;
     background-color: aqua;
     border: blue solid 2px;
     border-radius:30px;
+    opacity:1;
+}
+label{
+    background-color: aqua;
+}
+input{
+    margin-bottom:10px;
+}
+
+.nav{
+    background-color: aqua;
 }
 
 .form{
     min-height: 205px; 
 }
 
-/* SCROLLING MENU */
-nav{
-    width: 100%;
-}
-nav>ul {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* width:100%; */
-}
-
-.w{
-    list-style-type: none;
-}
-a{
-    border:blueviolet solid 2px;
-    border-radius: 5px;
-    padding:5px;
-    text-decoration: none;
-}
 
 .connec{
     min-height: 140px;
     display: flex;
     flex-direction: column;
 }
-.dropDown{
+/* .dropDown{
     position:relative;
-    display:inline-block;
-    width: 200px;   
+    display:inline-block;   
+} */
+.button-der{
+    border:blueviolet solid 2px;
+    border-radius: 5px;
+    padding:5px;
+    width: 120px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position:relative;
+    display:inline-block;   
 }
 .dropdown-child{
     display: none;
@@ -112,16 +133,7 @@ a{
 .dropdown-child .button-der{
     width:200px;
 }
-.button-der{
-    border:blueviolet solid 2px;
-    border-radius: 5px;
-    padding:5px;
-    text-decoration: none;
-}
-/* .nav{
-    border: blue solid 2px;
-    border-radius:30px;
-} */
+
 
 
 
@@ -134,5 +146,7 @@ a{
 footer{
     display: flex;
     justify-content: center;
+    color:white;
+    background-color: black;
 }
 
