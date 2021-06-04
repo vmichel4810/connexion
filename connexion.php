@@ -20,8 +20,9 @@
         </div>
         <div class="nav">
             <label for="mdp">Mot de passe</label>
-            <input type="password" name="mdp" id="mdp"required><php? endif ?>
-            <img src="./img/eye.svg" alt="" class="eye">
+            <input type="password" name="mdp" id="mdp"required>
+            <img src="./img/eye.svg" alt="" class="eye" onclick="myEye()">
+            <img src="./img/invisible.svg" class="eye1 none" onclick="myEye()">
             </div>
                 <!-- par $_GET -->
             <!-- <?php if(isset($_GET['error'])) : ?>
@@ -38,7 +39,7 @@
     </form>
     <div class="vodka">
         <p>Si vous ne posséder pas de compte</p>
-        <button id="is"type="submit">Inscrivez-vous</button>
+        <button id="is"type="submit" onclick="switchForm()">Inscrivez-vous</button>
     </div>
 </main>
 <main id="inscription" class="none">
@@ -61,12 +62,16 @@
         </div>            
         <div class="formul">
             <label for="mdp">Mot de passe</label>
-            <input type="password" name="" id="">
+            <input type="password" name="password" id="">
         </div>
         <div class="formul">
             <input type="submit" value="Envoyer le formulaire">
         </div>
     </form>
+    <div class="vodka">
+    <p>Si vous possédez un compte</p>
+    <button id="is"type="submit" onclick="switchForm()">connectez-vous</button>
+    /div>
 </main>
 <footer>
     <p>MICHEL Vincent</p>

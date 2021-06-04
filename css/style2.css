@@ -6,7 +6,9 @@
 }
 body{
     height:100vh;
-    background-image: url(/img/Jun031.svg);
+    background-image: url(/img/depositphotos_202535452-stock-photo-winter-mountain-landscape-with-steep.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header{
     height: 7%;
@@ -14,7 +16,7 @@ header{
     align-content: center;
 }
 nav{
-    padding-top: 15px;
+    padding-top: 15p;
 }
 .ul{
     display: flex;
@@ -38,11 +40,13 @@ nav{
     background-color: aqua; 
     color: black; 
 }
-.eye{
+.eye, .eye1{
     height: 20px;
     width: 20px;
     cursor:pointer;
 }
+
+
 .button-der{
     position: relative;
     
