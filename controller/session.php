@@ -12,9 +12,12 @@ foreach($users as $value){
         $_SESSION['mail'] = $value['mail'];
         $_SESSION['age'] = $value['age'];
         header('Location: /');
+        exit();
     }
-    if(empty($_SESSION['pseudo']) && empty($_SESSION['mdp'])){
-        header('Location: /connexion.php?error=');
-    }
+    // if(empty($_SESSION['pseudo']) && empty($_SESSION['mdp'])){
+    //     header('Location: /connexion.php?error=');
+    // }
 }
+$_SESSION['error'] =true;
+header('Location: /connexion.php');
 

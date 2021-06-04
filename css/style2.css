@@ -13,6 +13,9 @@ header{
     background-color: blanchedalmond;
     align-content: center;
 }
+nav{
+    padding-top: 15px;
+}
 .ul{
     display: flex;
     justify-content: space-evenly;
@@ -21,12 +24,24 @@ header{
     text-decoration: none;
     
 }
+.hover:hover, .backG{
+    background-color: burlywood;
+
+}
+.backG{
+    border-radius: 5px;
+}
 .w{
     
     border: blueviolet solid 2px;
     border-radius:5px;
     background-color: aqua; 
     color: black; 
+}
+.eye{
+    height: 20px;
+    width: 20px;
+    cursor:pointer;
 }
 .button-der{
     position: relative;
